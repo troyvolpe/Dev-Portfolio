@@ -1,0 +1,91 @@
+/**
+ * Main Application Styles
+ * 
+ * Author: Troy Volpe
+ * Created: 2025-09-29
+ * Last Modified: 2025-10-03
+ * 
+ * Description:
+ * Core styling for the main App component including layout, profile picture,
+ * and global theme elements. Features emerald gradient background and
+ * animated spinning profile picture.
+ * 
+ * Color Scheme:
+ * - Primary: Emerald greens (#064e3b, #0f172a)
+ * - Accent: Various emerald shades
+ * - Background: Dark gradient for a modern appearance
+ */
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a 0%, #064e3b 100%); /* Emerald gradient background */
+  min-height: 100vh; /* Full viewport height */
+}
+
+.App-logo {
+  height: 150px;
+  width: 150px;
+  margin-top: 50px;
+  pointer-events: none;
+  border-radius: 50%;
+  border: 3px solid rgba(16, 185, 129, 0.6);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: none;
+  padding: 20px 0 0 0;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+
+.App-header .App-logo {
+  position: absolute;
+  top: 60px; 
+  left: 50%; 
+  transform: translateX(-50%); /* Center the element */
+  z-index: 1000;
+  margin: 0; 
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+.App > * {
+  width: 100%;
+}
+
+.hero {
+  margin-top: 160px; 
+}
+
+/* Privacy notice at bottom */
+.App p:last-child {
+  background: linear-gradient(135deg, #1e293b 0%, #134e4a 100%);
+  color: #a7f3d0;
+  margin: 0;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}

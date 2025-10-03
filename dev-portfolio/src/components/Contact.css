@@ -1,0 +1,121 @@
+/* Created: 2025-09-29 */
+/* CSS file for Contact section of portfolio */
+
+/* Contact section - emerald theme */
+.contact {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1e293b 0%, #134e4a 100%);
+  color: #d1fae5;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  border-top: 2px solid rgba(16, 185, 129, 0.3);
+  min-height: 50vh; /* Ensure it takes up enough space */
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #a7f3d0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  margin: 2rem auto 0 auto;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  min-width: 180px;
+  min-height: 60px;
+  text-align: center;
+  white-space: nowrap;
+  flex: 0 0 auto; /* Don't grow or shrink */
+}
+
+.contact-links a:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.contact-links a:active {
+  transform: translateY(-1px);
+}
+
+/* Email styling */
+.contact-links a[href^="mailto"] {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+}
+
+.contact-links a[href^="mailto"]:hover {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0891b2 100%);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3);
+}
+
+/* Privacy notice styling */
+.contact + p {
+  background: linear-gradient(135deg, #1e293b 0%, #134e4a 100%);
+  color: #a7f3d0;
+  margin: 0;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .contact-links a {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+

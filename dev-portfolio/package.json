@@ -1,0 +1,62 @@
+{
+  "name": "troy-volpe-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website showcasing cybersecurity expertise and full-stack development projects",
+  "author": "Troy Volpe <troyvolpe1@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/troyvolpe/Dev_Portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/troyvolpe/Dev_Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "cybersecurity",
+    "full-stack",
+    "web-development",
+    "responsive",
+    "modern"
+  ],
+  "private": false,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^12.23.22",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && echo 'Build complete - ready for deployment'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

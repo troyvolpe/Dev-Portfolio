@@ -1,0 +1,99 @@
+/* Created: 2025-09-29 */
+/* CSS file for Projects section of portfolio */
+
+.projects {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #0f172a 0%, #064e3b 100%);
+  color: #f1f5f9;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background: linear-gradient(145deg, #1e293b 0%, #134e4a 100%);
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: #d1fae5;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.read-more-btn {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 12px 0;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.read-more-btn:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.read-more-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.project-details {
+  margin: 15px 0;
+  padding: 16px;
+  background: rgba(16, 185, 129, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid #10b981;
+  animation: slideDown 0.3s ease-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.project-details p {
+  margin: 0;
+  color: #d1fae5;
+  line-height: 1.6;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Single GitHub link style with !important to force override */
+.github-link {
+  display: inline-block !important;
+  margin-top: 12px !important;
+  color: #fbbf24 !important; /* Bright yellow/gold */
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.github-link:hover {
+  color: #f59e0b !important; /* Darker gold on hover */
+  text-decoration: underline !important;
+}
+

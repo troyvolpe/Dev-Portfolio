@@ -1,0 +1,85 @@
+/* Created: 2025-09-29 */
+/* CSS file for About section of portfolio */
+
+/* About section - emerald theme */
+.about {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);
+  color: #d1fae5;
+  width: 100%; /* Full width instead of max-width */
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.about h3 {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem 0;
+  color: #6ee7b7;
+  font-weight: 600;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #a7f3d0;
+  max-width: 700px; /* Keep content readable but allow full background */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto; /* Center the grid */
+  max-width: 1200px; /* Limit grid width for readability */
+}
+
+.tech-list li {
+  background: linear-gradient(145deg, #1e293b 0%, #134e4a 100%);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.05);
+  transition: all 0.3s ease;
+  color: #d1fae5;
+}
+
+.tech-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+/* Responsive UI */
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+  }
+  
+  .tech-list {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+}
+
