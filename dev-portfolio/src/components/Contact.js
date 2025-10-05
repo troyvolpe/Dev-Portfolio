@@ -37,6 +37,9 @@ const Contact = () => {
         <a href="https://linkedin.com/in/-troyvolpe" target="_blank" rel="noopener noreferrer">
           💼 LinkedIn
         </a>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
+          📄 Resume
+        </a>
       </div>
     </section>
   );

@@ -44,6 +44,22 @@ const Hero = () => {
       >
         Cybersecurity Lead blending GRC expertise with hands-on coding and network analysis to build smarter, safer systems
       </motion.p>
+      
+      <motion.div
+        className="hero-cta"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+      >
+        <a 
+          href="/resume.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="resume-button"
+        >
+          📄 View Resume
+        </a>
+      </motion.div>
     </section>
   );
 };

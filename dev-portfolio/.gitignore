@@ -98,8 +98,7 @@ dist
 
 # Gatsby files
 .cache/
-/public/*
-!/public/favicon.ico
+
 
 
 # Storybook build outputs
@@ -200,8 +199,7 @@ config/secrets.json
 /storybook-static
 
 # Runtime generated files
-/public/static/
-/public/manifest.json.map
+
 
 # Compiled binary addons
 build/Release
@@ -253,7 +251,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+
 
 # Storybook build outputs
 .out
