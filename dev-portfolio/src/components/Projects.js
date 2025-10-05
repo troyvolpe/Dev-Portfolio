@@ -34,19 +34,19 @@ const projects = [
   {
     title: 'Visitor Logging System',
     description: 'A simple visitor logging system using Node.js and Express.',
-    details: 'A web application that logs visitor information such as IP address, visit time, and user agent. Built with Node.js and Express, it stores data in a lightweight database (like SQLite or MongoDB) and provides an admin interface to view and analyze visitor statistics.',
+    details: 'A web application that logs visitor information such as IP address, visit time, and user agent. Built with Node.js and Express, this system stores logs in a JSON file and provides an API endpoint for retrieving visit data. Designed with privacy in mind, it avoids storing sensitive information and complies with data protection regulations.',
     link: 'https://github.com/troyvolpe/Visitor-Logging-System'
   },
   {
     title: '🍯 Raspberry Pi Honeypot',
     description: 'A Raspberry Pi dedicated to detecting and logging unauthorized access attempts.',
-    details: 'Security monitoring system deployed on Raspberry Pi hardware. Monitors network traffic, logs suspicious activities, and sends alerts for potential security threats. Includes dashboard for viewing attack patterns and security analytics.',
+    details: 'Security monitoring system deployed on Raspberry Pi hardware. Monitors network traffic, logs suspicious activities, and sends alerts for potential security threats. Setup with Internet Storm Center (ISC) for threat intelligence integration.',
     link: 'https://github.com/troyvolpe/Raspberry-Pi-Honeypot',
   },
   {
     title: '🔐 Simple Login System',
     description: 'A simple login system using diverse programming languages and frameworks.',
-    details: 'Multi-language authentication system showcasing various implementation approaches. Includes versions in Python (Flask/Django), JavaScript (Node.js), PHP, and Java. Features user registration, login/logout, session management, and password hashing.',
+    details: 'Multi-language authentication system showcasing various implementation approaches. Includes versions in Python (Flask), JavaScript (Node.js), and Java. Features user registration, login/logout, and session management.',
     link: 'https://github.com/troyvolpe/Simple-Login-System'
   },
   {
@@ -54,18 +54,6 @@ const projects = [
     description: 'A Discord bot built with Node.js and Discord.js.',
     details: 'A feature-rich Discord bot that provides various utilities and fun commands. Built with Node.js and the Discord.js library.',
     link: 'https://github.com/troyvolpe/Discord-Bot',
-  },
-  {
-    title: 'Web-based Hangman',
-    description: 'A fun hangman game built with vanilla JavaScript, HTML, and CSS.',
-    details: 'Interactive word-guessing game built with pure JavaScript, HTML5, and CSS3. Features include multiple difficulty levels, score tracking, hint system, and smooth animations. No frameworks used - demonstrates fundamental web development skills.',
-    link: 'https://github.com/troyvolpe/Web-based-Hangman'
-  }, 
-  {
-    title: 'Instagram Web Scraper',
-    description: '',
-    details: 'Automated data collection tool for Instagram content analysis. Built with Python using BeautifulSoup and Selenium. Respects rate limits and terms of service while gathering public data for research purposes.',
-    link: ''
   }
 ];
 
