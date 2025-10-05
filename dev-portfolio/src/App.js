@@ -30,7 +30,13 @@ function App() {
   useEffect(() => {
     const logVisit = async () => {
       try {
-        await fetch('http://localhost:3001/log-visit', {
+        // Determine the correct API URL based on environment
+        const isDevelopment = window.location.hostname === 'localhost';
+        const apiUrl = isDevelopment 
+          ? 'http://localhost:3001/log-visit'
+          : '/api/log-visit';  // Use nginx proxy in production
+        
+        await fetch(apiUrl, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

@@ -8,7 +8,14 @@ const fs = require('fs');
 const app = express();
 const PORT = 3001;
 
-app.use(cors());
+// Configure CORS for production domain
+const corsOptions = {
+  origin: ['http://localhost:3000', 'https://troyvolpe.com', 'http://troyvolpe.com'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.post('/log-visit', (req, res) => {
@@ -25,6 +32,7 @@ app.post('/log-visit', (req, res) => {
   res.status(200).send('Visit logged');
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Visitor logger running on port ${PORT}`);
+  console.log(`Accessible at http://localhost:${PORT} and externally`);
 });
