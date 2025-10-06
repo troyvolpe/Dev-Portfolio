@@ -140,9 +140,14 @@
     padding: 0 1rem;
   }
   
-  .cta-button {
+  .cta-button,
+  .resume-button {
     padding: 0.8rem 2rem;
     font-size: 1.1rem;
+  }
+  
+  .hero-cta {
+    margin-top: 1.5rem;
   }
 }
 
@@ -153,6 +158,11 @@
   
   .hero p {
     font-size: 1.1rem;
+  }
+  
+  .resume-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
   }
 }
 

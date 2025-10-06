@@ -34,7 +34,7 @@ function App() {
         const isDevelopment = window.location.hostname === 'localhost';
         const apiUrl = isDevelopment 
           ? 'http://localhost:3001/log-visit'
-          : '/api/log-visit';  // Use nginx proxy in production
+          : '/api/log-visit'; 
         
         await fetch(apiUrl, {
           method: 'POST',
@@ -48,7 +48,6 @@ function App() {
         });
         console.log('Visit logged successfully');
       } catch (error) {
-        // Silently handle visitor logging errors to prevent app crashes
         console.log('Visitor logging unavailable:', error.message);
       }
     };
@@ -65,20 +64,14 @@ function App() {
         <Projects />
         <About />
         <Contact />
-        
-        <p style={{ 
-          fontSize: '0.8rem', 
-          textAlign: 'center', 
-          marginTop: '2rem',
-          color: '#a7f3d0',
-          maxWidth: '600px',
-          margin: '2rem auto 0 auto',
-          padding: '0 1rem'
-        }}>
+      </header>
+      
+      <footer className="App-footer">
+        <p className="privacy-notice">
           This site logs basic visit data (IP, browser, timestamp) for performance and analytics. 
           No personal information is collected.
         </p>
-      </header>
+      </footer>
     </div>
   );
 }

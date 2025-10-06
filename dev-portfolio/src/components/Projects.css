@@ -97,3 +97,122 @@
   text-decoration: underline !important;
 }
 
+/* Button container for consistent spacing */
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+/* Desktop to keep buttons inline */
+@media (min-width: 769px) {
+  .project-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* Mobile Design */
+@media (max-width: 768px) {
+  .projects {
+    padding: 2rem 1rem;
+  }
+  
+  .project-grid {
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 1.25rem;
+    margin: 0 auto;
+  }
+  
+  .project-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* Button container for better mobile layout */
+  .project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    align-items: center;
+  }
+  
+  .read-more-btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .github-link {
+    width: 100% !important;
+    max-width: 200px !important;
+    text-align: center !important;
+    padding: 10px 18px !important;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+    color: #1f2937 !important;
+    border-radius: 6px !important;
+    font-size: 0.9rem !important;
+    margin-top: 0 !important;
+    display: block !important;
+    box-sizing: border-box !important;
+  }
+  
+  .github-link:hover {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+    color: #1f2937 !important;
+    text-decoration: none !important;
+    transform: translateY(-1px) !important;
+  }
+  
+  .project-details {
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .project-card {
+    padding: 1rem;
+    max-width: 320px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .project-card p {
+    font-size: 0.9rem;
+  }
+  
+  .read-more-btn,
+  .github-link {
+    font-size: 0.85rem !important;
+    padding: 8px 16px !important;
+  }
+  
+  .project-details {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+

@@ -32,7 +32,7 @@ const projects = [
     link: 'https://github.com/troyvolpe/Raspberry-Pi-Domain-Host'
   },
   {
-    title: 'Visitor Logging System',
+    title: '⚙️ Visitor Logging System',
     description: 'A simple visitor logging system using Node.js and Express.',
     details: 'A web application that logs visitor information such as IP address, visit time, and user agent. Built with Node.js and Express, this system stores logs in a JSON file and provides an API endpoint for retrieving visit data. Designed with privacy in mind, it avoids storing sensitive information and complies with data protection regulations.',
     link: 'https://github.com/troyvolpe/Visitor-Logging-System'
@@ -73,24 +73,26 @@ const Projects = () => {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             
-            <button 
-              className="read-more-btn" 
-              onClick={() => toggleDetails(index)}
-            >
-              {expandedProject === index ? 'Show less ↑' : 'Read more →'}
-            </button>
-            
             {expandedProject === index && (
               <div className="project-details">
                 <p>{project.details}</p>
               </div>
             )}
             
-            {project.link && (
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="github-link">
-                View on GitHub →
-              </a>
-            )}
+            <div className="project-buttons">
+              <button 
+                className="read-more-btn" 
+                onClick={() => toggleDetails(index)}
+              >
+                {expandedProject === index ? 'Show less ↑' : 'Read more →'}
+              </button>
+              
+              {project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="github-link">
+                  View on GitHub →
+                </a>
+              )}
+            </div>
           </div>
         ))}
       </div>
