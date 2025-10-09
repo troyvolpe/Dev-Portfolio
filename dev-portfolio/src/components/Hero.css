@@ -1,6 +1,7 @@
 /* Created: 2025-09-29 */
 /* CSS file for Hero section of portfolio */
 
+/* Hero Background */
 .hero {
   height: 100vh; 
   width: 100vw; 
@@ -16,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.5rem;
 }
 
 @keyframes float {
@@ -24,58 +26,26 @@
   66% { transform: translateY(10px) rotate(-1deg); }
 }
 
+/* "Hello, I'm Troy" */
 .hero h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
   background: linear-gradient(135deg, #ffffff 0%, #34d399 50%, #10b981 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-weight: 800;
+  font-weight: 400;
   position: relative;
   z-index: 1;
 }
 
+/* Intro Paragraph */
 .hero p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #a7f3d0;
   max-width: 600px;
   line-height: 1.6;
-  position: relative;
-  z-index: 1;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
-  color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
-  position: relative;
-  z-index: 1;
-  border: 2px solid transparent;
-}
-
-.cta-button:hover {
-  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(16, 185, 129, 0.4);
-  border-color: rgba(52, 211, 153, 0.5);
-}
-
-.cta-button:active {
-  transform: translateY(-1px);
-}
-
-/* Hero Call-to-Action section */
-.hero-cta {
-  margin-top: 2rem;
   position: relative;
   z-index: 1;
 }
@@ -107,7 +77,7 @@
   transform: translateY(-1px);
 }
 
-/* Add subtle glow animation */
+/* Subtle glow animation */
 .resume-button::before {
   content: '';
   position: absolute;
@@ -140,14 +110,9 @@
     padding: 0 1rem;
   }
   
-  .cta-button,
   .resume-button {
     padding: 0.8rem 2rem;
     font-size: 1.1rem;
-  }
-  
-  .hero-cta {
-    margin-top: 1.5rem;
   }
 }
 

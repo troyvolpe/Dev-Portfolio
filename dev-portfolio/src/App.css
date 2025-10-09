@@ -77,7 +77,34 @@
 }
 
 .hero {
-  margin-top: 160px; 
+  margin-top: 200px; /* Increased spacing to prevent overlap */
+  padding-top: 2rem; /* Additional padding for better spacing */
+}
+
+/* Responsive adjustments for profile picture positioning */
+@media (max-width: 768px) {
+  .App-header .App-logo {
+    top: 40px;
+    height: 120px;
+    width: 120px;
+  }
+  
+  .hero {
+    margin-top: 180px; /* Adjusted for smaller profile picture */
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header .App-logo {
+    top: 30px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .hero {
+    margin-top: 160px; /* Further adjustment for mobile */
+    padding-top: 1rem;
+  }
 }
 
 /* Footer Styling */

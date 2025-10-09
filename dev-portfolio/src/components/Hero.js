@@ -34,7 +34,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <strong>Cybersecurity Analyst | Governance, Risk & Compliance (GRC) Analyst</strong>
+        Cybersecurity Analyst | Governance, Risk & Compliance (GRC) Analyst
       </motion.h2>
 
       <motion.p
