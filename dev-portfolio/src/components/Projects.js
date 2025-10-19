@@ -44,6 +44,12 @@ const projects = [
     link: 'https://github.com/troyvolpe/Raspberry-Pi-Honeypot',
   },
   {
+    title: '🚫 Raspberry Pi Wi-Fi Ad Blocker',
+    description: 'A Raspberry Pi configured to block ads on all devices connected to the network.',
+    details: 'This project involves setting up a Raspberry Pi to act as a network-wide ad blocker. By utilizing Pi-hole, a popular open-source software, I was able to filter out unwanted advertisements at the DNS level. The setup includes a user-friendly web interface for monitoring and managing blocked domains.',
+    link: 'https://github.com/troyvolpe/Raspberry-Pi-WiFi-Ad-Blocker'
+  },
+  {
     title: '🔐 Simple Login System',
     description: 'A simple login system using diverse programming languages and frameworks.',
     details: 'Multi-language authentication system showcasing various implementation approaches. Includes versions in Python (Flask), JavaScript (Node.js), and Java. Features user registration, login/logout, and session management.',
@@ -54,12 +60,6 @@ const projects = [
     description: 'A Discord bot built with Node.js and Discord.js.',
     details: 'A feature-rich Discord bot that provides various utilities and fun commands. Built with Node.js and the Discord.js library.',
     link: 'https://github.com/troyvolpe/Discord-Bot',
-  },
-  {
-    title: '🚫 Raspberry Pi Wi-Fi Ad Blocker',
-    description: 'A Raspberry Pi configured to block ads on all devices connected to the network.',
-    details: 'This project involves setting up a Raspberry Pi to act as a network-wide ad blocker. By utilizing Pi-hole, a popular open-source software, I was able to filter out unwanted advertisements at the DNS level. The setup includes a user-friendly web interface for monitoring and managing blocked domains.',
-    link: 'https://github.com/troyvolpe/Raspberry-Pi-WiFi-Ad-Blocker'
   }
 ];
 
