@@ -29,7 +29,13 @@ const About = () => {
       <h3>Tech Stack</h3>
       <ul className="tech-list">
         <li>🛡️ Cybersecurity Principles</li>
-        <li>🔒 Privacy-Compliant Development</li>
+        <li>🔐 IAM & Access Control</li>
+        <li>🌐 Network Security</li>
+        <li>🔎 Vulnerability Assessment</li>
+        <li>📋 GRC Frameworks (NIST, ISO 27001)</li>
+        <li>🔍 SIEM/Splunk</li>
+        <li>🐧 Linux/Unix</li>
+        <li>🛠️ Python</li>
         <li>📊 Data Analytics & Logging</li>
         <li>🖥️ Self-Hosting & Deployment</li>
         <li>🐙 Git & GitHub</li>
@@ -38,9 +44,6 @@ const About = () => {
         <li>🚀 Express.js</li>
         <li>📱 JavaScript (ES6+)</li>
         <li>⚛️ React</li>
-        <li>🎨 CSS3 & HTML5</li>
-        <li>🎬 Framer Motion</li>
-
       </ul>
     </section>
   );

@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #0f172a 0%, #064e3b 50%, #1e293b 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -28,9 +28,9 @@
 
 /* "Hello, I'm Troy" */
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #ffffff 0%, #34d399 50%, #10b981 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #a78bfa 50%, #8b5cf6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -39,13 +39,43 @@
   z-index: 1;
 }
 
+.hero h2 {
+  font-size: 2.1rem;
+  margin-bottom: 0.5rem;
+  color: #c7d2fe;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #a78bfa;
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+}
+
 /* Intro Paragraph */
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   margin-bottom: 2rem;
-  color: #a7f3d0;
+  color: #c7d2fe;
   max-width: 600px;
   line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-credentials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+  color: #a78bfa;
   position: relative;
   z-index: 1;
 }
@@ -53,50 +83,61 @@
 .resume-button {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  background: linear-gradient(135deg, #5b21b6 0%, #6b21a8 100%);
   color: white;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 8px 25px rgba(91, 33, 182, 0.3);
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
+  margin: 0 10px;
 }
 
-.resume-button:hover {
-  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+.resume-button.secondary {
+  background: linear-gradient(135deg, #5b21b6 0%, #6b21a8 100%);
+  border: 2px solid rgba(139, 92, 246, 0.5);
+  color: white;
+}
+
+.resume-button:hover,
+.resume-button.secondary:hover {
+  background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
+  color: #1a1a2e;
+  border-color: rgba(167, 139, 250, 0.5);
   transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(16, 185, 129, 0.4);
-  border-color: rgba(52, 211, 153, 0.5);
+  box-shadow: 0 12px 35px rgba(167, 139, 250, 0.4);
 }
 
 .resume-button:active {
   transform: translateY(-1px);
 }
 
-/* Subtle glow animation */
-.resume-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.5s;
-}
-
-.resume-button:hover::before {
-  left: 100%;
-}
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
   40% { transform: translateX(-50%) translateY(-10px); }
   60% { transform: translateX(-50%) translateY(-5px); }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #a78bfa;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* Responsive design */

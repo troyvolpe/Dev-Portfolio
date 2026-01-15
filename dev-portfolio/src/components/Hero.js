@@ -34,15 +34,37 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        Cybersecurity Analyst | Governance, Risk & Compliance (GRC) Analyst
+        Incoming Cybersecurity Systems Engineer Intern at Lockheed Martin
       </motion.h2>
+
+      <motion.h3
+        className="hero-subtitle"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        Current Rowan University Student & Security Analyst
+      </motion.h3>
+
+      <motion.div
+        className="hero-credentials"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
+        <span>🛡️Security+ Certified</span>
+        <span>•</span>
+        <span>🎓 Anticipated Master's in Cybersecurity</span>
+        <span>•</span>
+        <span>🔒 GRC Analyst</span>
+      </motion.div>
 
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.4 }}
       >
-        Cybersecurity Lead blending GRC expertise with hands-on coding and network analysis to build smarter, safer systems
+        Building secure systems through GRC strategy, hands-on infrastructure defense, and advanced threat analysis
       </motion.p>
       
       <motion.div
@@ -55,10 +77,25 @@ const Hero = () => {
           href="/resume.pdf" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="resume-button"
+          className="resume-button primary"
         >
           📄 View Resume
         </a>
+        <a 
+          href="#certifications" 
+          className="resume-button secondary"
+        >
+          🏆 View Certifications
+        </a>
+      </motion.div>
+
+      <motion.div
+        className="scroll-indicator"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, y: [0, 10, 0] }}
+        transition={{ duration: 2, delay: 1.2, repeat: Infinity }}
+      >
+        <span>↓</span>
       </motion.div>
     </section>
   );

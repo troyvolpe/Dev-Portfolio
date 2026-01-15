@@ -55,12 +55,12 @@ const projects = [
     details: 'Multi-language authentication system showcasing various implementation approaches. Includes versions in Python (Flask), JavaScript (Node.js), and Java. Features user registration, login/logout, and session management.',
     link: 'https://github.com/troyvolpe/Simple-Login-System'
   },
-  {
-    title: '🤖 Discord Bot',
-    description: 'A Discord bot built with Node.js and Discord.js.',
-    details: 'A feature-rich Discord bot that provides various utilities and fun commands. Built with Node.js and the Discord.js library.',
-    link: 'https://github.com/troyvolpe/Discord-Bot',
-  }
+  //{
+    //title: '🤖 Discord Bot',
+    //description: 'A Discord bot built with Node.js and Discord.js.',
+    //details: 'A feature-rich Discord bot that provides various utilities and fun commands. Built with Node.js and the Discord.js library.',
+    //link: 'https://github.com/troyvolpe/Discord-Bot',
+  //}
 ];
 
 const Projects = () => {

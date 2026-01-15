@@ -1,0 +1,283 @@
+/**
+ * Certifications Section Styles
+ * 
+ * Author: Troy Volpe
+ * Created: 2026-01-15
+ * 
+ * Description:
+ * Styling for the Certifications component featuring modern card layouts,
+ * status badges, and responsive grid system for cert display.
+ */
+
+.certifications {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #ffffff;
+}
+
+.certifications h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #a0aec0;
+  margin-bottom: 50px;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover::before {
+  transform: scaleX(1);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(102, 126, 234, 0.5);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.cert-card.earned {
+  border-color: rgba(72, 187, 120, 0.3);
+}
+
+.cert-card.earned:hover {
+  border-color: rgba(72, 187, 120, 0.6);
+  box-shadow: 0 10px 30px rgba(72, 187, 120, 0.3);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cert-logo {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.cert-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cert-badge.earned {
+  background: rgba(72, 187, 120, 0.2);
+  color: #68d391;
+  border: 1px solid rgba(72, 187, 120, 0.4);
+}
+
+.cert-badge.in-progress {
+  background: rgba(102, 126, 234, 0.2);
+  color: #7c9bf5;
+  border: 1px solid rgba(102, 126, 234, 0.4);
+}
+
+.cert-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.cert-issuer {
+  color: #a0aec0;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.cert-date {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.cert-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.cert-link:hover {
+  background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.cert-skills {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cert-skills h4 {
+  font-size: 1.15rem;
+  color: #e2e8f0;
+  margin-bottom: 12px;
+}
+
+.cert-skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cert-skills li {
+  padding: 8px 0;
+  padding-left: 20px;
+  position: relative;
+  color: #cbd5e0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.cert-skills li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* Career Highlight Section */
+.career-highlight {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 15px;
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  text-align: center;
+}
+
+.highlight-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.highlight-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.career-highlight h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.career-highlight p {
+  font-size: 1.1rem;
+  color: #cbd5e0;
+  margin: 0;
+}
+
+.career-highlight strong {
+  color: #667eea;
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certifications {
+    padding: 60px 15px;
+  }
+
+  .certifications h2 {
+    font-size: 2rem;
+  }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cert-card {
+    padding: 25px;
+  }
+
+  .highlight-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .career-highlight {
+    padding: 25px;
+  }
+
+  .career-highlight h3 {
+    font-size: 1.3rem;
+  }
+
+  .career-highlight p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications h2 {
+    font-size: 1.75rem;
+  }
+
+  .cert-logo {
+    font-size: 2.5rem;
+  }
+
+  .cert-card h3 {
+    font-size: 1.3rem;
+  }
+}

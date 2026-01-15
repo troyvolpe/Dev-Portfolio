@@ -1,11 +1,11 @@
 /* Created: 2025-09-29 */
 /* CSS file for About section of portfolio */
 
-/* About section - emerald theme */
+/* About section - purple theme */
 .about {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);
-  color: #d1fae5;
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+  color: #e0e7ff;
   width: 100%; /* Full width instead of max-width */
   margin: 0;
   text-align: center;
@@ -13,9 +13,9 @@
 }
 
 .about h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -23,17 +23,17 @@
 }
 
 .about h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 2rem 0 1rem 0;
-  color: #6ee7b7;
+  color: #a78bfa;
   font-weight: 600;
 }
 
 .about p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   line-height: 1.8;
   margin-bottom: 2rem;
-  color: #a7f3d0;
+  color: #c7d2fe;
   max-width: 700px; /* Keep content readable but allow full background */
   margin-left: auto;
   margin-right: auto;
@@ -50,21 +50,40 @@
 }
 
 .tech-list li {
-  background: linear-gradient(145deg, #1e293b 0%, #134e4a 100%);
+  background: linear-gradient(145deg, #0f3460 0%, #533483 100%);
   padding: 0.6rem 1rem;
   border-radius: 8px;
   font-weight: 500;
-  font-size: 0.9rem;
-  border: 1px solid rgba(16, 185, 129, 0.2);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.05);
+  font-size: 1.05rem;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.05);
   transition: all 0.3s ease;
-  color: #d1fae5;
+  color: #e0e7ff;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-list li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.tech-list li:hover::before {
+  transform: scaleX(1);
 }
 
 .tech-list li:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
-  border-color: rgba(16, 185, 129, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  border-color: rgba(102, 126, 234, 0.5);
 }
 
 /* Responsive UI */
