@@ -55,7 +55,7 @@
   top: 60px; 
   left: 50%; 
   transform: translateX(-50%); /* Center the element */
-  z-index: 1000;
+  z-index: 5;
   margin: 0; 
 }
 
@@ -96,13 +96,13 @@
 
 @media (max-width: 480px) {
   .App-header .App-logo {
-    top: 30px;
-    height: 100px;
-    width: 100px;
+    top: 20px;
+    height: 90px;
+    width: 90px;
   }
   
   .hero {
-    margin-top: 160px; /* Further adjustment for mobile */
+    margin-top: 150px; /* Further adjustment for mobile */
     padding-top: 1rem;
   }
 }
