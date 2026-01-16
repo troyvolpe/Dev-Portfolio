@@ -103,8 +103,7 @@
   }
   
   .hero {
-    margin-top: 220px; /* Further adjustment for mobile */
-    padding-top: 3rem;
+    margin-top: 0; /* Removed - spacing now controlled by Hero.css padding-top */
   }
 }
 

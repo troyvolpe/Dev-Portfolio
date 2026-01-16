@@ -158,8 +158,14 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    justify-content: flex-start;
+    padding-top: 140px;
+  }
+  
   .hero h1 {
     font-size: 2rem;
+    margin-top: 0;
   }
   
   .hero p {
