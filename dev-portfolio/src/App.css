@@ -84,26 +84,27 @@
 /* Responsive adjustments for profile picture positioning */
 @media (max-width: 768px) {
   .App-header .App-logo {
-    top: 40px;
-    height: 120px;
-    width: 120px;
+    top: 30px;
+    height: 110px;
+    width: 110px;
   }
   
   .hero {
-    margin-top: 180px; /* Adjusted for smaller profile picture */
+    margin-top: 200px; /* Adjusted for smaller profile picture */
+    padding-top: 2rem;
   }
 }
 
 @media (max-width: 480px) {
   .App-header .App-logo {
-    top: 20px;
-    height: 90px;
-    width: 90px;
+    top: 15px;
+    height: 85px;
+    width: 85px;
   }
   
   .hero {
-    margin-top: 150px; /* Further adjustment for mobile */
-    padding-top: 1rem;
+    margin-top: 170px; /* Further adjustment for mobile */
+    padding-top: 2rem;
   }
 }
 
