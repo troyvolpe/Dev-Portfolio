@@ -52,7 +52,9 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        <span>🛡️Security+ Certified</span>
+        <span>🛡️ Security+ Certified</span>
+        <span>•</span>
+        <span>🔍 CySA+ Certified</span>
         <span>•</span>
         <span>🎓 Anticipated Master's in Cybersecurity</span>
         <span>•</span>

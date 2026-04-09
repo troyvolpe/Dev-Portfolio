@@ -32,18 +32,22 @@ const About = () => {
         <li>🔐 IAM & Access Control</li>
         <li>🌐 Network Security</li>
         <li>🔎 Vulnerability Assessment</li>
+        <li>⚠️ Threat & Vulnerability Management</li>
+        <li>🚨 Incident Response & Recovery</li>
+        <li>🛠️ Security Architecture & Design</li>
         <li>📋 GRC Frameworks (NIST, ISO 27001)</li>
         <li>🔍 SIEM/Splunk</li>
+        <li>📊 Security Monitoring & Analytics</li>
         <li>🐧 Linux/Unix</li>
+        <li>🟢 Node.js</li>
+        <li>🚀 Express.js</li>
         <li>🛠️ Python</li>
-        <li>📊 Data Analytics & Logging</li>
+        <li>📱 JavaScript (ES6+)</li>
+        <li>⚛️ React</li>
         <li>🖥️ Self-Hosting & Deployment</li>
         <li>🐙 Git & GitHub</li>
         <li>🔧 npm & Package Management</li>
-        <li>🟢 Node.js</li>
-        <li>🚀 Express.js</li>
-        <li>📱 JavaScript (ES6+)</li>
-        <li>⚛️ React</li>
+        <li>📊 Data Analytics & Logging</li>
       </ul>
     </section>
   );

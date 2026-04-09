@@ -117,6 +117,59 @@
   border-top: 2px solid rgba(102, 126, 234, 0.3);
 }
 
+/* Certification Logos Section */
+.cert-logos-section {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.cert-logos-section h3 {
+  font-size: 1.2rem;
+  color: #a78bfa;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.cert-logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.cert-logo-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.cert-logo-item:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.cert-logo-item img {
+  height: 80px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  filter: brightness(1.3) contrast(1.3);
+  transition: filter 0.3s ease;
+}
+
+.cert-logo-item:hover img {
+  filter: brightness(1.1) contrast(1.2);
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
 .privacy-notice {
   color: #c7d2fe;
   font-size: 0.9rem;
@@ -126,4 +179,49 @@
   padding: 0 1rem;
   line-height: 1.5;
   opacity: 0.9;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .App-footer {
+    padding: 1.5rem;
+  }
+
+  .cert-logos-container {
+    gap: 25px;
+  }
+
+  .cert-logo-item img {
+    height: 60px;
+    max-width: 100px;
+  }
+
+  .cert-logos-section h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-footer {
+    padding: 1rem;
+  }
+
+  .cert-logos-container {
+    gap: 15px;
+  }
+
+  .cert-logo-item img {
+    height: 50px;
+    max-width: 80px;
+  }
+
+  .cert-logos-section h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .privacy-notice {
+    font-size: 0.8rem;
+  }
 }

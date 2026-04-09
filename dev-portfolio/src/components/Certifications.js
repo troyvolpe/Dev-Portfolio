@@ -36,6 +36,31 @@ const Certifications = () => {
       ]
     },
     {
+      name: 'CompTIA CySA+',
+      issuer: 'CompTIA',
+      status: 'earned',
+      date: 'April 2026',
+      logo: '🔍',
+      certLink: '/CySA+_CERT.pdf',
+      skills: [
+        'Threat & Vulnerability Management',
+        'Software & Application Security',
+        'Security Architecture & Tool Sets',
+        'Security Operations & Monitoring',
+        'Incident Response & Recovery'
+      ]
+    },
+    {
+      name: 'CompTIA Security Analytics Professional (CSAP)',
+      issuer: 'CompTIA',
+      status: 'earned',
+      date: '2026',
+      logo: '🧭',
+      certLink: '/CSAP_Certified.pdf',
+      badgeLabel: '🧭 Pathway',
+      skills: []
+    },
+    {
       name: 'Splunk Core Certified User',
       issuer: 'Splunk',
       status: 'in-progress',
@@ -51,14 +76,7 @@ const Certifications = () => {
       logo: '🐧',
       skills: []
     },
-    {
-      name: 'CompTIA CySA+',
-      issuer: 'CompTIA',
-      status: 'in-progress',
-      date: 'Expected 2026',
-      logo: '🔍',
-      skills: []
-    }
+
   ];
 
   const containerVariants = {
@@ -110,7 +128,7 @@ const Certifications = () => {
             <div className="cert-header">
               <div className="cert-logo">{cert.logo}</div>
               <span className={`cert-badge ${cert.status}`}>
-                {cert.status === 'earned' ? '✓ Certified' : '📚 In Progress'}
+                {cert.badgeLabel || (cert.status === 'earned' ? '✓ Certified' : '📚 In Progress')}
               </span>
             </div>
             

@@ -69,6 +69,20 @@ function App() {
       </header>
       
       <footer className="App-footer">
+        <div className="cert-logos-section">
+          <h3>Industry Certifications</h3>
+          <div className="cert-logos-container">
+            <a href="/SEC+_CERT.jpg" target="_blank" rel="noopener noreferrer" className="cert-logo-item" title="CompTIA Security+">
+              <img src="/Sec+_Logo.png" alt="Security+ Logo" />
+            </a>
+            <a href="/CySA+_CERT.pdf" target="_blank" rel="noopener noreferrer" className="cert-logo-item" title="CompTIA CySA+">
+              <img src="/CySA+_Logo.png" alt="CySA+ Logo" />
+            </a>
+            <a href="https://www.comptia.org/en-us/resources/stackables/#:~:text=CompTIA%20Security%20Analytics%20Professional" target="_blank" rel="noopener noreferrer" className="cert-logo-item" title="CompTIA Security Analytics Professional (CSAP) Stackable">
+              <img src="/CSAP_Certified.png" alt="CompTIA Security Analytics Professional (CSAP) Pathway" />
+            </a>
+          </div>
+        </div>
         <p className="privacy-notice">
           This site logs basic visit data (IP, browser, timestamp) for performance and analytics. 
           No personal information is collected.
