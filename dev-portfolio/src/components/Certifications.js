@@ -61,18 +61,10 @@ const Certifications = () => {
       skills: []
     },
     {
-      name: 'Splunk Core Certified User',
-      issuer: 'Splunk',
-      status: 'in-progress',
-      date: 'Expected 2026',
-      logo: '📊',
-      skills: []
-    },
-    {
       name: 'Linux+',
       issuer: 'CompTIA',
       status: 'in-progress',
-      date: 'Expected 2026',
+      date: 'Expected July 2026',
       logo: '🐧',
       skills: []
     },

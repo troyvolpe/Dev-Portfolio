@@ -23,7 +23,7 @@ const About = () => {
     <section className="about">
       <h2>About Me</h2>
 
-      <p>I'm Troy, a third-year Computer Science student currently pursuing a master’s degree in Cybersecurity, with a strong foundation in infrastructure, systems, and security principles. I am highly organized, results-driven, and thrive in environments that demand analytical thinking and technical precision. My academic background and proactive work ethic equip me to contribute effectively across a wide range of engineering and technology roles
+      <p>I'm Troy, a fourth-year Computer Science student currently pursuing a master’s degree in Cybersecurity, with a strong foundation in infrastructure, systems, and security principles. I am highly organized, results-driven, and thrive in environments that demand analytical thinking and technical precision. My academic background and proactive work ethic equip me to contribute effectively across a wide range of engineering and technology roles
 
       </p>
       <h3>Tech Stack</h3>

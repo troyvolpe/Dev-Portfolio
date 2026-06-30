@@ -34,7 +34,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        Incoming Cybersecurity Systems Engineer Intern at Lockheed Martin
+        Cybersecurity Systems Engineer Intern at Lockheed Martin
       </motion.h2>
 
       <motion.h3
@@ -43,7 +43,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        Current Rowan University Student & Security Analyst
+        Rowan University Student & Security Analyst
       </motion.h3>
 
       <motion.div
