@@ -63,10 +63,16 @@ const Certifications = () => {
     {
       name: 'Linux+',
       issuer: 'CompTIA',
-      status: 'in-progress',
-      date: 'Expected July 2026',
+      status: 'earned',
+      date: '2026',
       logo: '🐧',
-      skills: []
+      certLink: '/Volpe_Linux+.pdf',
+      skills: [
+        'System Management',
+        'Security and Hardening',
+        'Scripting, Containers, and Automation',
+        'Troubleshooting Linux Systems'
+      ]
     },
 
   ];
