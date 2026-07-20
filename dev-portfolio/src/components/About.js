@@ -23,9 +23,18 @@ const About = () => {
     <section className="about">
       <h2>About Me</h2>
 
-      <p>I'm Troy, a fourth-year Computer Science student currently pursuing a master’s degree in Cybersecurity, with a strong foundation in infrastructure, systems, and security principles. I am highly organized, results-driven, and thrive in environments that demand analytical thinking and technical precision. My academic background and proactive work ethic equip me to contribute effectively across a wide range of engineering and technology roles
-
+      <p>
+        I'm Troy, a fourth-year Computer Science student currently pursuing a master’s degree in Cybersecurity, with a strong foundation in infrastructure, systems, and security principles. I focus on building and defending reliable systems across Linux, cloud, and application environments, and I value clear analysis, disciplined execution, and practical security controls.
       </p>
+
+      <p>
+        My current certifications include CompTIA Security+, CySA+, Linux+, and the Security Analytics Professional stackable pathway. You can also review my latest resume for a fuller snapshot of my experience, projects, and technical background.
+      </p>
+
+      <p>
+        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+      </p>
+
       <h3>Tech Stack</h3>
       <ul className="tech-list">
         <li>🛡️ Cybersecurity Principles</li>

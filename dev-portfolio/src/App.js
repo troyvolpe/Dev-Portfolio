@@ -78,6 +78,9 @@ function App() {
             <a href="/CySA+_CERT.pdf" target="_blank" rel="noopener noreferrer" className="cert-logo-item" title="CompTIA CySA+">
               <img src="/CySA+_Logo.png" alt="CySA+ Logo" />
             </a>
+            <a href="/Linux+_CERT.pdf" target="_blank" rel="noopener noreferrer" className="cert-logo-item" title="CompTIA Linux+">
+              <img src="/Linux+_Logo.png" alt="Linux+ Logo" />
+            </a>
             <a href="https://www.comptia.org/en-us/resources/stackables/#:~:text=CompTIA%20Security%20Analytics%20Professional" target="_blank" rel="noopener noreferrer" className="cert-logo-item" title="CompTIA Security Analytics Professional (CSAP) Stackable">
               <img src="/CSAP_Certified.png" alt="CompTIA Security Analytics Professional (CSAP) Pathway" />
             </a>

@@ -66,7 +66,7 @@ const Certifications = () => {
       status: 'earned',
       date: '2026',
       logo: '🐧',
-      certLink: '/Volpe_Linux+.pdf',
+      certLink: '/Linux+_CERT.pdf',
       skills: [
         'System Management',
         'Security and Hardening',
