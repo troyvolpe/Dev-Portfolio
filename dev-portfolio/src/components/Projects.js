@@ -20,41 +20,95 @@ import './Projects.css'; // CSS Styling
 // Project data
 const projects = [
   {
-    title: '📚 Portfolio Site',
-    description: 'This very site! Built with React and hosted on a Raspberry Pi.',
-    details: 'A responsive portfolio website showcasing my projects and skills. Built using React with modern CSS styling, deployed on a self-hosted Raspberry Pi server. Features include project galleries, contact forms, and responsive design principles.',
+    title: '🌐 Self-Hosted Portfolio Infrastructure',
+    description:
+      'A React portfolio deployed through self-hosted Linux infrastructure with secure public access.',
+    details:
+      'A responsive portfolio website built with React and hosted on my own infrastructure. The deployment uses Linux, Nginx, Cloudflare, DNS management, TLS, and reverse proxy configuration. I am redesigning the application so it can be packaged and deployed consistently as a Docker container.',
     link: 'https://github.com/troyvolpe/Dev-Portfolio',
   },
+
   {
-    title: '🖥️ Raspberry Pi Domain Host',
-    description: 'A Raspberry Pi configured to host this very site using Nginx and Docker.',
-    details: 'This project involved setting up a Raspberry Pi to serve as a web host for my portfolio site. Utilizing Nginx as the web server and Docker for containerization, I was able to create a lightweight and efficient hosting environment. The setup includes SSL configuration for secure access and is optimized for performance.',
-    link: 'https://github.com/troyvolpe/Raspberry-Pi-Domain-Host'
+    title: '🏠 Multi-Node Homelab',
+    description:
+      'A multi-system Linux environment built for hosting, monitoring, networking, and security experimentation.',
+    details:
+      'A growing homelab consisting of Linux servers, Raspberry Pis, managed services, containerized applications, network storage, and dedicated infrastructure roles. The environment is used to practice system administration, network segmentation, service deployment, access control, troubleshooting, monitoring, and security engineering.',
+    link: 'https://troyvolpe.com/coming_soon',
   },
+
   {
-    title: '⚙️ Visitor Logging System',
-    description: 'A simple visitor logging system using Node.js and Express.',
-    details: 'A web application that logs visitor information such as IP address, visit time, and user agent. Built with Node.js and Express, this system stores logs in a JSON file and provides an API endpoint for retrieving visit data. Designed with privacy in mind, it avoids storing sensitive information and complies with data protection regulations.',
-    link: 'https://github.com/troyvolpe/Visitor-Logging-System'
+    title: '🎬 Self-Hosted Media Platform',
+    description:
+      'A private media platform built with Jellyfin and supporting containerized services.',
+    details:
+      'A self-hosted media environment using Jellyfin alongside supporting services such as Sonarr, Radarr, Prowlarr, Jellyseerr, and more. The project includes Docker Compose orchestration, storage management, reverse proxy configuration, VPN-routed traffic, remote access controls, and performance troubleshooting.',
+    link: 'https://troyvolpe.com/coming_soon',
   },
+
+  {
+    title: '🔐 WireGuard Remote Access Network',
+    description:
+      'A private VPN environment used to securely administer and access homelab services.',
+    details:
+      'A WireGuard network designed to provide encrypted remote access to servers and internal applications. The environment uses dedicated VPN addressing, restricted firewall rules, SSH key authentication, and service-level access controls to reduce unnecessary public exposure.',
+    link: 'https://troyvolpe.com/coming_soon',
+  },
+
+  {
+    title: '📊 Infrastructure Monitoring Platform',
+    description:
+      'Centralized availability and system monitoring across multiple homelab nodes.',
+    details:
+      'A monitoring environment using Uptime Kuma and Netdata to track service availability, system health, resource utilization, and node performance. The platform includes automated notifications and provides centralized visibility into the condition of hosted services and infrastructure.',
+    link: 'https://troyvolpe.com/coming_soon',
+  },
+
+  {
+    title: '💾 Automated Backup System',
+    description:
+      'A Linux backup workflow designed around encrypted, versioned, and recoverable data.',
+    details:
+      'An automated backup project using Restic to protect server configurations, application data, and important files. The design includes scheduled backups, retention policies, repository validation, recovery testing, and centralized backup storage.',
+    link: 'https://troyvolpe.com/coming_soon',
+  },
+
+  {
+    title: '🔎 Automated Vulnerability Scanner',
+    description:
+      'A scheduled vulnerability assessment workflow built around Nessus and Linux automation.',
+    details:
+      'A vulnerability management project designed to run Nessus scans against authorized homelab systems. The workflow includes a maintained target inventory, scheduled scan execution, API-based report exports, result organization, and remediation tracking.',
+    link: 'https://troyvolpe.com/coming_soon',
+  },
+
   {
     title: '🍯 Raspberry Pi Honeypot',
-    description: 'A Raspberry Pi dedicated to detecting and logging unauthorized access attempts.',
-    details: 'Security monitoring system deployed on Raspberry Pi hardware. Monitors network traffic, logs suspicious activities, and sends alerts for potential security threats. Setup with Internet Storm Center (ISC) for threat intelligence integration.',
+    description:
+      'A dedicated Raspberry Pi environment for observing and documenting malicious activity.',
+    details:
+      'A security monitoring project focused on deploying an isolated honeypot to collect unauthorized access attempts and attack telemetry. The planned environment emphasizes network isolation, safe log collection, alerting, and analysis of observed attacker behavior.',
     link: 'https://github.com/troyvolpe/Raspberry-Pi-Honeypot',
   },
+
   {
-    title: '🚫 Raspberry Pi Wi-Fi Ad Blocker',
-    description: 'A Raspberry Pi configured to block ads on all devices connected to the network.',
-    details: 'This project involves setting up a Raspberry Pi to act as a network-wide ad blocker. By utilizing Pi-hole, a popular open-source software, I was able to filter out unwanted advertisements at the DNS level. The setup includes a user-friendly web interface for monitoring and managing blocked domains.',
-    link: 'https://github.com/troyvolpe/Raspberry-Pi-WiFi-Ad-Blocker'
+    title: '🚫 Network-Wide DNS Filtering',
+    description:
+      'A Pi-hole deployment designed to provide DNS filtering and visibility across the network.',
+    details:
+      'A network-wide DNS filtering project using Pi-hole to block unwanted domains, review DNS activity, and centrally manage filtering policies. The deployment is being redesigned to integrate cleanly with the homelab DHCP, routing, and monitoring environment.',
+    link: 'https://github.com/troyvolpe/Raspberry-Pi-WiFi-Ad-Blocker',
   },
+
   {
-    title: '🔐 Simple Login System',
-    description: 'A simple login system using diverse programming languages and frameworks.',
-    details: 'Multi-language authentication system showcasing various implementation approaches. Includes versions in Python (Flask), JavaScript (Node.js), and Java. Features user registration, login/logout, and session management.',
-    link: 'https://github.com/troyvolpe/Simple-Login-System'
+    title: '📈 Local AI Market Watch',
+    description:
+      'A local AI-assisted platform for collecting and analyzing market-related information.',
+    details:
+      'An experimental platform designed to collect public market data, company news, and sentiment signals for local analysis. The planned architecture combines scheduled data collection, structured storage, local language models through Ollama, alerting, and dashboards. The system is intended for research and analysis rather than autonomous trading.',
+    link: 'https://troyvolpe.com/coming_soon',
   },
+
   //{
     //title: '🤖 Discord Bot',
     //description: 'A Discord bot built with Node.js and Discord.js.',

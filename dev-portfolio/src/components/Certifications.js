@@ -28,10 +28,10 @@ const Certifications = () => {
       logo: '🛡️',
       certLink: '/SEC+_CERT.jpg',
       skills: [
-        'Threats, Attacks & Vulnerabilities',
-        'Architecture & Design',
-        'Implementation',
-        'Operations & Incident Response',
+        'Threats, Vulnerabilities & Mitigations',
+        'Security Architecture',
+        'Security Operations',
+        'Identity & Access Management',
         'Governance, Risk & Compliance'
       ]
     },
@@ -43,22 +43,12 @@ const Certifications = () => {
       logo: '🔍',
       certLink: '/CySA+_CERT.pdf',
       skills: [
-        'Threat & Vulnerability Management',
-        'Software & Application Security',
-        'Security Architecture & Tool Sets',
-        'Security Operations & Monitoring',
+        'Security Operations',
+        'Vulnerability Management',
+        'Threat Intelligence & Analysis',
+        'Reporting & Communication',
         'Incident Response & Recovery'
       ]
-    },
-    {
-      name: 'CompTIA Security Analytics Professional (CSAP)',
-      issuer: 'CompTIA',
-      status: 'earned',
-      date: '2026',
-      logo: '🧭',
-      certLink: '/CSAP_Certified.pdf',
-      badgeLabel: '🧭 Pathway',
-      skills: []
     },
     {
       name: 'CompTIA Linux+',
@@ -68,12 +58,29 @@ const Certifications = () => {
       logo: '🐧',
       certLink: '/Linux+_CERT.pdf',
       skills: [
-        'System Management',
-        'Security and Hardening',
-        'Scripting, Containers, and Automation',
-        'Troubleshooting Linux Systems'
+        'Linux System Administration',
+        'System Security & Hardening',
+        'Containers & Virtualization',
+        'Scripting & Automation',
+        'Network & Troubleshooting'
       ]
     },
+    {
+      name: 'CompTIA Security Analytics Professional',
+      issuer: 'CompTIA',
+      status: 'earned',
+      date: 'April 2026',
+      logo: '🧭',
+      certLink: '/CSAP_Certified.pdf',
+      badgeLabel: 'Stackable Certification',
+      skills: [
+        'Security Analytics',
+        'Threat Detection',
+        'Vulnerability Management',
+        'Security Monitoring',
+        'Incident Response'
+      ]
+    }
 
   ];
 

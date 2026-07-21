@@ -24,39 +24,78 @@ const About = () => {
       <h2>About Me</h2>
 
       <p>
-        I'm Troy, a fourth-year Computer Science student currently pursuing a master’s degree in Cybersecurity, with a strong foundation in infrastructure, systems, and security principles. I focus on building and defending reliable systems across Linux, cloud, and application environments, and I value clear analysis, disciplined execution, and practical security controls.
+        I'm Troy, a fourth-year Computer Science student at Rowan University pursuing a
+        B.S. in Computer Science and an M.S. in Cybersecurity. My primary interests are
+        cybersecurity, Linux systems, networking, infrastructure, and the design of
+        secure, reliable environments.
       </p>
 
       <p>
-        My current certifications include CompTIA Security+, CySA+, Linux+, and the Security Analytics Professional stackable pathway. You can also review my latest resume for a fuller snapshot of my experience, projects, and technical background.
+        Through professional experience and hands-on homelab projects, I have worked
+        with Linux administration, network security, vulnerability management,
+        containerized services, system monitoring, access controls, and security
+        analysis. I enjoy understanding how systems operate, identifying weaknesses,
+        and building practical solutions that improve security, reliability, and
+        visibility.
+      </p>
+      
+      <p>
+        I currently hold the CompTIA Security+, CySA+, and Linux+ certifications, along
+        with the CompTIA Security Analytics Professional stackable certification. My
+        long-term goal is to continue developing as a cybersecurity and systems
+        professional while expanding my experience across secure infrastructure,
+        cloud environments, automation, and security engineering.
       </p>
 
       <p>
         <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
       </p>
 
-      <h3>Tech Stack</h3>
+      <h3>Technical Skills</h3>
       <ul className="tech-list">
-        <li>🛡️ Cybersecurity Principles</li>
-        <li>🔐 IAM & Access Control</li>
-        <li>🌐 Network Security</li>
+        <li>🐧 Linux System Administration</li>
+
+        <li>🌐 Networking & Network Security</li>
+
+        <li>🛡️ Cybersecurity Operations</li>
+
         <li>🔎 Vulnerability Assessment</li>
+
         <li>⚠️ Threat & Vulnerability Management</li>
-        <li>🚨 Incident Response & Recovery</li>
-        <li>🛠️ Security Architecture & Design</li>
-        <li>📋 GRC Frameworks (NIST, ISO 27001)</li>
-        <li>🔍 SIEM/Splunk</li>
-        <li>📊 Security Monitoring & Analytics</li>
-        <li>🐧 Linux/Unix</li>
-        <li>🟢 Node.js</li>
-        <li>🚀 Express.js</li>
-        <li>🛠️ Python</li>
-        <li>📱 JavaScript (ES6+)</li>
+
+        <li>🚨 Incident Detection & Response</li>
+
+        <li>📊 Security Monitoring & Log Analysis</li>
+
+        <li>🔍 SIEM & Security Analytics</li>
+
+        <li>🔐 Identity & Access Management</li>
+
+        <li>🧱 System Hardening & Access Controls</li>
+
+        <li>🏗️ Security Architecture & Design</li>
+
+        <li>📋 NIST Cybersecurity Framework</li>
+
+        <li>🐳 Docker & Containerized Services</li>
+
+        <li>🖥️ Self-Hosting & Homelab Infrastructure</li>
+
+        <li>☁️ Cloud & Virtualized Environments</li>
+
+        <li>📡 System Monitoring & Availability</li>
+
+        <li>⚙️ Bash Scripting & Automation</li>
+
+        <li>🐍 Python</li>
+
+        <li>📱 JavaScript</li>
+
         <li>⚛️ React</li>
-        <li>🖥️ Self-Hosting & Deployment</li>
+
+        <li>🟢 Node.js & Express.js</li>
+
         <li>🐙 Git & GitHub</li>
-        <li>🔧 npm & Package Management</li>
-        <li>📊 Data Analytics & Logging</li>
       </ul>
     </section>
   );

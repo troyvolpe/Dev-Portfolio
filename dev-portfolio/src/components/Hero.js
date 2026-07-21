@@ -43,7 +43,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        Rowan University Student & Security Analyst
+        Computer Science Student | Security, Linux & Infrastructure
       </motion.h3>
 
       <motion.div
@@ -52,13 +52,15 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        <span>🛡️ Security+ Certified</span>
+        <span>🛡️ Security+</span>
         <span>•</span>
-        <span>🔍 CySA+ Certified</span>
+        <span>🔍 CySA+</span>
         <span>•</span>
-        <span>🎓 Anticipated Master's in Cybersecurity</span>
+        <span>🐧 Linux+</span>
         <span>•</span>
-        <span>🔒 GRC Analyst</span>
+        <span>🎓 B.S. Computer Science, December 2026</span>
+        <span>•</span>
+        <span>🔒 M.S. Cybersecurity, December 2027</span>
       </motion.div>
 
       <motion.p
@@ -66,7 +68,9 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.4 }}
       >
-        Building secure systems through GRC strategy, hands-on infrastructure defense, and advanced threat analysis
+        Building secure and reliable systems through Linux administration,
+        network defense, infrastructure engineering, automation, and
+        hands-on security analysis.
       </motion.p>
       
       <motion.div
@@ -84,10 +88,10 @@ const Hero = () => {
           📄 View Resume
         </a>
         <a 
-          href="#certifications" 
+          href="#projects" 
           className="resume-button secondary"
         >
-          🏆 View Certifications
+          🛠️ View Projects
         </a>
       </motion.div>
 
