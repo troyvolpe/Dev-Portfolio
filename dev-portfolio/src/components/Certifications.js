@@ -61,10 +61,10 @@ const Certifications = () => {
       skills: []
     },
     {
-      name: 'Linux+',
+      name: 'CompTIA Linux+',
       issuer: 'CompTIA',
       status: 'earned',
-      date: '2026',
+      date: 'July 2026',
       logo: '🐧',
       certLink: '/Linux+_CERT.pdf',
       skills: [
@@ -169,8 +169,8 @@ const Certifications = () => {
         <div className="highlight-content">
           <span className="highlight-icon">🚀</span>
           <div>
-            <h3>Incoming Cybersecurity Systems Engineer Intern</h3>
-            <p>Accepted position at <strong>Lockheed Martin</strong> - Starting May 2026</p>
+            <h3>Cybersecurity Systems Engineer Intern</h3>
+            <p>Accepted position at <strong>Lockheed Martin</strong> - Started May 2026</p>
           </div>
         </div>
       </motion.div>

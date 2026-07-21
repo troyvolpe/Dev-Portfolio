@@ -3,7 +3,7 @@
  * 
  * Author: Troy Volpe
  * Created: 2025-09-29
- * Last Modified: 2025-10-03
+ * Last Modified: 2026-07-20
  * 
  * Description:
  * Personal information and technical skills section of the portfolio.
