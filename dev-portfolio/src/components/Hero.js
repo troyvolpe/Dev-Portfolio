@@ -20,6 +20,8 @@ import { motion } from 'framer-motion';
 import './Hero.css';
 
 const Hero = () => {
+  const resumeHref = `${process.env.PUBLIC_URL}/Resume.pdf`;
+
   return (
     <section className="hero">
       <motion.h1
@@ -80,7 +82,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.6 }}
       >
         <a 
-          href="/Resume.pdf" 
+          href={resumeHref} 
           target="_blank" 
           rel="noopener noreferrer"
           className="resume-button primary"

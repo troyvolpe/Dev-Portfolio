@@ -23,6 +23,8 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
+  const resumeHref = `${process.env.PUBLIC_URL}/Resume.pdf`;
+
   return (
     <section className="contact">
       <h2>Contact Me</h2>
@@ -37,7 +39,7 @@ const Contact = () => {
         <a href="https://linkedin.com/in/-troyvolpe" target="_blank" rel="noopener noreferrer">
           💼 LinkedIn
         </a>
-        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
+        <a href={resumeHref} target="_blank" rel="noopener noreferrer" className="resume-link">
           📄 Resume
         </a>
       </div>
