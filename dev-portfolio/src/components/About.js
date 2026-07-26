@@ -19,8 +19,6 @@ import React from 'react';
 import './About.css'; 
 
 const About = () => {
-  const resumeHref = `${process.env.PUBLIC_URL}/Resume.pdf`;
-
   return (
     <section className="about">
       <h2>About Me</h2>
@@ -47,10 +45,6 @@ const About = () => {
         long-term goal is to continue developing as a cybersecurity and systems
         professional while expanding my experience across secure infrastructure,
         cloud environments, automation, and security engineering.
-      </p>
-
-      <p>
-        <a href={resumeHref} target="_blank" rel="noopener noreferrer">View Resume</a>
       </p>
 
       <h3>Technical Skills</h3>
