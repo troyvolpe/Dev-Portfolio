@@ -81,7 +81,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.6 }}
       >
         <a 
-          href={`/Resume.pdf`}
+          href={`../../public/Resume.pdf`}
           target="_blank" 
           rel="noopener noreferrer"
           className="resume-button"
