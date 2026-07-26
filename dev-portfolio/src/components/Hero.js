@@ -20,7 +20,6 @@ import { motion } from 'framer-motion';
 import './Hero.css';
 
 const Hero = () => {
-  const resumeHref = `./Resume.pdf`;
 
   return (
     <section className="hero">
@@ -82,18 +81,12 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.6 }}
       >
         <a 
-          href={resumeHref} 
+          href={`/Resume.pdf`}
           target="_blank" 
           rel="noopener noreferrer"
-          className="resume-button primary"
+          className="resume-button"
         >
           📄 View Resume
-        </a>
-        <a 
-          href="#projects" 
-          className="resume-button secondary"
-        >
-          🛠️ View Projects
         </a>
       </motion.div>
 
