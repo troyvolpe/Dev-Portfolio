@@ -20,7 +20,7 @@ import { motion } from 'framer-motion';
 import './Hero.css';
 
 const Hero = () => {
-  const resumeHref = `/Resume.pdf`;
+  const resumeHref = `./Resume.pdf`;
 
   return (
     <section className="hero">

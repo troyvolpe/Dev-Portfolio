@@ -23,7 +23,7 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
-  const resumeHref = `${process.env.PUBLIC_URL}/Resume.pdf`;
+  const resumeHref = `./Resume.pdf`;
 
   return (
     <section className="contact">
