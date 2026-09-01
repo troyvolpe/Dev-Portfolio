@@ -82,6 +82,8 @@ const Hero = () => {
       >
         <a 
           href={`/Resume.pdf`}
+          // THIS DOES NOT WORK
+          // FIX THE RESUME LINK
           target="_blank" 
           rel="noopener noreferrer"
           className="resume-button"
